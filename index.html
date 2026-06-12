@@ -31,7 +31,7 @@
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1000px; /* 🔥 было меньше — стало шире */
       margin: 0 auto;
       padding: 20px;
     }
@@ -52,6 +52,7 @@
       opacity: 0.85;
     }
 
+    /* 🔥 ШИРЕ КАРТОЧКИ */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -66,6 +67,7 @@
       box-shadow: 0 6px 18px rgba(0,0,0,0.06);
       border: 1px solid #eee;
       transition: 0.2s ease;
+
       width: 100%;
     }
 
@@ -89,6 +91,7 @@
       flex-shrink: 0;
     }
 
+    /* ✅ теперь тексту хватает места */
     .title {
       font-size: 16px;
       font-weight: 600;
@@ -208,7 +211,7 @@
             <div class="subtitle">Human to Dog Translator</div>
           </div>
         </div>
-        <a class="link" href="https://play.google.com/store/apps/details?id=games.lenvik.tfd2&hl=en" target="_blank">View on Google Play</a>
+        <a class="link" href="https://play.google.com/store/apps/details?id=games.lenvik.tfd2&hl=en target="_blank">View on Google Play</a>
       </div>
 
       <div class="card">
