@@ -52,17 +52,19 @@
       opacity: 0.85;
     }
 
+    /* 🔥 чуть шире карточки */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
       margin-top: 20px;
     }
 
+    /* 🔥 чуть больше карточка */
     .card {
       background: white;
       border-radius: 16px;
-      padding: 16px;
+      padding: 18px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.06);
       border: 1px solid #eee;
       transition: 0.2s ease;
@@ -80,16 +82,23 @@
     }
 
     .icon {
-      width: 56px;
-      height: 56px;
+      width: 58px;
+      height: 58px;
       border-radius: 12px;
       object-fit: cover;
     }
 
+    /* 🔥 больше места под название */
     .title {
       font-size: 16px;
       font-weight: 600;
       margin: 0;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      max-width: 210px;
     }
 
     .subtitle {
@@ -190,7 +199,7 @@
             <div class="subtitle">Human to Cat Translator</div>
           </div>
         </div>
-        <a class="link" href="https://play.google.com/store/apps/details?id=games.lenvik.tfc1" target="_blank">View on Google Play</a>
+        <a class="link" href="https://play.google.com/store/apps/details?id=games.lenvik.tfc1&hl=en" target="_blank">View on Google Play</a>
       </div>
 
       <div class="card">
@@ -201,7 +210,7 @@
             <div class="subtitle">Human to Dog Translator</div>
           </div>
         </div>
-        <a class="link" href="https://play.google.com/store/apps/details?id=games.lenvik.tfd2" target="_blank">View on Google Play</a>
+        <a class="link" href="https://play.google.com/store/apps/details?id=games.lenvik.tfd2&hl=en" target="_blank">View on Google Play</a>
       </div>
 
       <div class="card">
@@ -212,7 +221,7 @@
             <div class="subtitle">Bird Translator Simulator</div>
           </div>
         </div>
-        <a class="link" href="https://play.google.com/store/apps/details?id=games.lenvik.tfb3" target="_blank">View on Google Play</a>
+        <a class="link" href="https://play.google.com/store/apps/details?id=games.lenvik.tfb3&hl=en" target="_blank">View on Google Play</a>
       </div>
 
     </div>
