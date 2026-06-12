@@ -52,31 +52,46 @@
 
     .card {
       background: white;
-      padding: 20px;
       border-radius: 16px;
+      padding: 16px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.06);
       border: 1px solid #eee;
+      transition: 0.2s;
     }
 
-    .emoji {
-      font-size: 28px;
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .app {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      object-fit: cover;
     }
 
     .title {
-      font-size: 18px;
-      margin-top: 10px;
+      font-size: 16px;
       font-weight: 600;
+      margin: 0;
     }
 
     .subtitle {
       font-size: 13px;
       color: #666;
-      margin-top: 6px;
+      margin-top: 4px;
     }
 
     .link {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 12px;
       font-size: 13px;
       text-decoration: none;
       color: #007aff;
@@ -105,57 +120,81 @@
 
   <div class="container">
 
-    <!-- 🍏 iOS SECTION -->
+    <!-- 🍏 iOS -->
     <div class="section-title">🍏 iOS Apps</div>
 
     <div class="grid">
 
       <div class="card">
-        <div class="emoji">🐱</div>
-        <div class="title">Cat Translator</div>
-        <div class="subtitle">for Cats</div>
+        <div class="app">
+          <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/xx.jpg/512x512bb.jpg" />
+          <div>
+            <div class="title">Cat Translator</div>
+            <div class="subtitle">for Cats</div>
+          </div>
+        </div>
         <a class="link" href="https://apps.apple.com/app/id1624899198" target="_blank">View on App Store</a>
       </div>
 
       <div class="card">
-        <div class="emoji">🐶</div>
-        <div class="title">Dog Translator</div>
-        <div class="subtitle">for Dogs</div>
+        <div class="app">
+          <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/xx.jpg/512x512bb.jpg" />
+          <div>
+            <div class="title">Dog Translator</div>
+            <div class="subtitle">for Dogs</div>
+          </div>
+        </div>
         <a class="link" href="https://apps.apple.com/app/id1630558619" target="_blank">View on App Store</a>
       </div>
 
       <div class="card">
-        <div class="emoji">🐦</div>
-        <div class="title">Bird & Parrot Translator</div>
-        <div class="subtitle">for Birds</div>
+        <div class="app">
+          <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/xx.jpg/512x512bb.jpg" />
+          <div>
+            <div class="title">Bird & Parrot Translator</div>
+            <div class="subtitle">for Birds</div>
+          </div>
+        </div>
         <a class="link" href="https://apps.apple.com/app/id6770038023" target="_blank">View on App Store</a>
       </div>
 
     </div>
 
-    <!-- 🤖 ANDROID SECTION -->
+    <!-- 🤖 Android -->
     <div class="section-title">🤖 Android Apps</div>
 
     <div class="grid">
 
       <div class="card">
-        <div class="emoji">🐱</div>
-        <div class="title">Cat Translator</div>
-        <div class="subtitle">for Cats</div>
+        <div class="app">
+          <img class="icon" src="https://play-lh.googleusercontent.com/REPLACE1=s128" />
+          <div>
+            <div class="title">Cat Translator</div>
+            <div class="subtitle">for Cats</div>
+          </div>
+        </div>
         <a class="link" href="https://play.google.com/store/apps/details?id=games.lenvik.tfc1" target="_blank">View on Google Play</a>
       </div>
 
       <div class="card">
-        <div class="emoji">🐶</div>
-        <div class="title">Dog Translator</div>
-        <div class="subtitle">for Dogs</div>
+        <div class="app">
+          <img class="icon" src="https://play-lh.googleusercontent.com/REPLACE2=s128" />
+          <div>
+            <div class="title">Dog Translator</div>
+            <div class="subtitle">for Dogs</div>
+          </div>
+        </div>
         <a class="link" href="https://play.google.com/store/apps/details?id=games.lenvik.tfd2" target="_blank">View on Google Play</a>
       </div>
 
       <div class="card">
-        <div class="emoji">🐦</div>
-        <div class="title">Bird & Parrot Translator</div>
-        <div class="subtitle">for Birds</div>
+        <div class="app">
+          <img class="icon" src="https://play-lh.googleusercontent.com/REPLACE3=s128" />
+          <div>
+            <div class="title">Bird & Parrot Translator</div>
+            <div class="subtitle">for Birds</div>
+          </div>
+        </div>
         <a class="link" href="https://play.google.com/store/apps/details?id=games.lenvik.tfb3" target="_blank">View on Google Play</a>
       </div>
 
