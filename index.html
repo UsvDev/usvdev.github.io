@@ -52,19 +52,17 @@
       opacity: 0.85;
     }
 
-    /* 🔥 чуть шире карточки */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
       margin-top: 20px;
     }
 
-    /* 🔥 чуть больше карточка */
     .card {
       background: white;
       border-radius: 16px;
-      padding: 18px;
+      padding: 16px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.06);
       border: 1px solid #eee;
       transition: 0.2s ease;
@@ -82,23 +80,16 @@
     }
 
     .icon {
-      width: 58px;
-      height: 58px;
+      width: 56px;
+      height: 56px;
       border-radius: 12px;
       object-fit: cover;
     }
 
-    /* 🔥 больше места под название */
     .title {
       font-size: 16px;
       font-weight: 600;
       margin: 0;
-
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-
-      max-width: 210px;
     }
 
     .subtitle {
@@ -128,6 +119,21 @@
       font-size: 13px;
       margin-top: 40px;
     }
+
+    .support {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    .support a {
+      color: #007aff;
+      text-decoration: none;
+    }
+
+    .support a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
@@ -156,7 +162,7 @@
             <div class="subtitle">Human to Cat Translator</div>
           </div>
         </div>
-        <a class="link" href="https://apps.apple.com/app/id1624899198" target="_blank">View on App Store</a>
+        <a class="link" href="https://apps.apple.com/app/id1624899198?l=en" target="_blank">View on App Store</a>
       </div>
 
       <div class="card">
@@ -167,7 +173,7 @@
             <div class="subtitle">Human to Dog Translator</div>
           </div>
         </div>
-        <a class="link" href="https://apps.apple.com/app/id1630558619" target="_blank">View on App Store</a>
+        <a class="link" href="https://apps.apple.com/app/id1630558619?l=en" target="_blank">View on App Store</a>
       </div>
 
       <div class="card">
@@ -178,7 +184,7 @@
             <div class="subtitle">Sounds, Games & Simulator</div>
           </div>
         </div>
-        <a class="link" href="https://apps.apple.com/app/id6770038023" target="_blank">View on App Store</a>
+        <a class="link" href="https://apps.apple.com/app/id6770038023?l=en" target="_blank">View on App Store</a>
       </div>
 
     </div>
@@ -230,6 +236,10 @@
 
   <footer>
     © 2026 SERHII USHAKOV. All rights reserved.
+
+    <div class="support">
+      Support: <a href="mailto:usvdev@gmail.com">usvdev@gmail.com</a>
+    </div>
   </footer>
 
 </body>
