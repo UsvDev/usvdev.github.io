@@ -31,7 +31,7 @@
     }
 
     .container {
-      max-width: 1000px; /* 🔥 было меньше — стало шире */
+      max-width: 900px;
       margin: 0 auto;
       padding: 20px;
     }
@@ -52,14 +52,15 @@
       opacity: 0.85;
     }
 
-    /* 🔥 ШИРЕ КАРТОЧКИ */
+    /* 📦 bigger grid */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
       margin-top: 20px;
     }
 
+    /* 🧱 bigger card */
     .card {
       background: white;
       border-radius: 16px;
@@ -67,8 +68,6 @@
       box-shadow: 0 6px 18px rgba(0,0,0,0.06);
       border: 1px solid #eee;
       transition: 0.2s ease;
-
-      width: 100%;
     }
 
     .card:hover {
@@ -80,26 +79,20 @@
       display: flex;
       align-items: center;
       gap: 14px;
-      width: 100%;
     }
 
+    /* 🖼️ bigger icons */
     .icon {
       width: 64px;
       height: 64px;
       border-radius: 14px;
       object-fit: cover;
-      flex-shrink: 0;
     }
 
-    /* ✅ теперь тексту хватает места */
     .title {
       font-size: 16px;
       font-weight: 600;
       margin: 0;
-
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
 
     .subtitle {
