@@ -31,7 +31,7 @@
     }
 
     .container {
-      max-width: 1100px; /* 🔥 было 900px — стало шире */
+      max-width: 1000px; /* 🔥 было меньше — стало шире */
       margin: 0 auto;
       padding: 20px;
     }
@@ -52,60 +52,66 @@
       opacity: 0.85;
     }
 
-    /* 🔥 БОЛЬШЕ КАРТОЧКИ */
+    /* 🔥 ШИРЕ КАРТОЧКИ */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 26px;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 24px;
       margin-top: 20px;
     }
 
     .card {
       background: white;
-      border-radius: 18px;
-      padding: 22px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
       border: 1px solid #eee;
-      transition: 0.25s ease;
+      transition: 0.2s ease;
+
+      width: 100%;
     }
 
     .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 14px 30px rgba(0,0,0,0.14);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
     }
 
     .app {
       display: flex;
-      align-items: flex-start;
-      gap: 16px;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
     }
 
     .icon {
-      width: 72px;   /* 🔥 было 64px */
-      height: 72px;
-      border-radius: 16px;
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
       object-fit: cover;
       flex-shrink: 0;
     }
 
+    /* ✅ теперь тексту хватает места */
     .title {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 600;
       margin: 0;
-      line-height: 1.25;
-      word-break: break-word;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .subtitle {
       font-size: 13px;
       color: #666;
-      margin-top: 6px;
-      line-height: 1.35;
+      margin-top: 4px;
+      line-height: 1.3;
     }
 
     .link {
       display: inline-block;
-      margin-top: 16px;
+      margin-top: 14px;
       font-size: 13px;
       text-decoration: none;
       color: #007aff;
@@ -121,7 +127,7 @@
       padding: 40px;
       color: #999;
       font-size: 13px;
-      margin-top: 50px;
+      margin-top: 40px;
     }
   </style>
 </head>
